@@ -1,0 +1,26 @@
+# Qt Creator user-specific config
+*.pro.user
+
+# Build output
+release/
+debug/
+Makefile
+Makefile.*
+*.o
+*.obj
+*.moc
+*.rcc
+*.qm
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Office temp files
+~$*.*
+
+# Binaries and libraries
+*.exe
+*.dll
+*.a
+*.so
+*.dylib

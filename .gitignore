@@ -12,9 +12,6 @@ release/
 Debug/
 Release/
 
-# Nested repository managed separately
-QTdesktop/
-
 # Compiler and linker artifacts
 *.o
 *.obj
