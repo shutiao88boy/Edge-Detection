@@ -43,7 +43,7 @@ GNSSdll/                      # ══════ 独立 DLL/SO 构建版本 �
 ├── serial_port.h / .c        # 跨平台串口驱动
 ├── config_file.h / .c        # 配置文件读取（库内部私有，不暴露为 API）
 ├── signaledge_ui_api.h       # C API 头文件（与 QTdesktop 同步）
-├── signaledge_ui_api.cpp     # C API 实现（7 个公开函数）
+├── signaledge_ui_api.c       # C API 实现（7 个公开函数）
 └── signalledge_ui_api.pro    # 独立构建的 qmake 工程文件
 ```
 
@@ -71,7 +71,7 @@ GNSSdll/                      # ══════ 独立 DLL/SO 构建版本 �
 ├─────────────────────────────────────────────┤
 │         动态库 GNSSdll（独立进程）            │
 │  编译为 libsignaledge_ui_api.so / .dll      │
-│  ├─ signaledge_ui_api.cpp — 连接/采集实现    │
+│  ├─ signaledge_ui_api.c — 连接/采集实现      │
 │  │    ZD_ServerCreate() 内部读取 config.txt   │
 │  ├─ serial_port.c — 跨平台串口驱动           │
 │  └─ config_file.c — 配置文件读取（私有）     │
